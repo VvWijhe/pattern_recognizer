@@ -1,17 +1,17 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity FSM is
+entity pattern_recognizer is
 	port(	clk : in std_logic;
 			reset : in std_logic;
 			x : in std_logic;
 			z : out std_logic
 	);
-end FSM;
+end pattern_recognizer;
 
 
 
-architecture behaviour of FSM is
+architecture behaviour of pattern_recognizer is
 	begin
 		process(clk, reset)
 			type State_type is (S0, S1, S11, S111, S1110, s11100);
