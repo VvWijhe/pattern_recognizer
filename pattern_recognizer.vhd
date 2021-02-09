@@ -5,7 +5,8 @@ entity pattern_recognizer is
 	port(	clk : in std_logic;
 			reset : in std_logic;
 			x : in std_logic;
-			z : out std_logic
+			segment_display_ms : out bit_vector(6 DOWNTO 0);
+			segment_display_ls	: out bit_vector(6 DOWNTO 0)	
 	);
 end pattern_recognizer;
 
@@ -16,6 +17,7 @@ architecture behaviour of pattern_recognizer is
 		process(clk, reset)
 			type State_type is (S0, S1, S11, S111, S1110, s11100);
 			variable State : State_Type;
+			variable counter : integer range 0 to 99;
 		begin
 			
 			if(reset='1') then
@@ -71,7 +73,7 @@ architecture behaviour of pattern_recognizer is
 				end case; 
 			
 				case State is
-					when S1101 => z <='1';
+					when S11100 =>	counter := counter + 1;			
 					when others => z <= '0';
 				end case;
 		
