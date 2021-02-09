@@ -1,12 +1,13 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use work.seven_segment_display.all;
 
 entity pattern_recognizer is
 	port(	clk : in std_logic;
 			reset : in std_logic;
 			x : in std_logic;
-			segment_display_ms : out bit_vector(6 DOWNTO 0);
-			segment_display_ls	: out bit_vector(6 DOWNTO 0)	
+			segment_display_ms : out std_logic_vector(6 DOWNTO 0);
+			segment_display_ls	: out std_logic_vector(6 DOWNTO 0)	
 	);
 end pattern_recognizer;
 
@@ -15,13 +16,14 @@ end pattern_recognizer;
 architecture behaviour of pattern_recognizer is
 	begin
 		process(clk, reset)
-			type State_type is (S0, S1, S11, S111, S1110, s11100);
+			type State_type is (S0, S1, S11, S111, S1110, S11100);
 			variable State : State_Type;
-			variable counter : integer range 0 to 99;
+			variable counter : integer range 0 to 100;
+			variable temp : integer range 0 to 9;
 		begin
 			
 			if(reset='1') then
-				State := S0; z <= '0';
+				State := S0; counter <= '0';
 			
 			elsif rising_edge(clk) then
 				case State is
@@ -73,8 +75,25 @@ architecture behaviour of pattern_recognizer is
 				end case; 
 			
 				case State is
-					when S11100 =>	counter := counter + 1;			
-					when others => z <= '0';
+
+						when S11100 =>
+								if(counter = 100) then
+									segment_display_ms <= intdec_to_display_vector(10); --sent overflow to segment display
+									segment_display_ls <= intdec_to_display_vector(10); --sent overflow to segment display
+								else
+				
+									counter := counter + 1;
+						
+									segment_display_ls <= intdec_to_display_vector(counter mod 10); --sent least significant number to segment display
+									temp <= counter/10;
+									segment_display_ms <= intdec_to_display_vector(temp mod 10); --sent most significant number to segment display
+						
+								end if;
+								
+						when others =>
+							null;
+
+					
 				end case;
 		
 			end if;
