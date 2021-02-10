@@ -23,7 +23,7 @@ architecture behaviour of pattern_recognizer is
 		begin
 			
 			if(reset='1') then
-				State := S0; counter <= '0';
+				State := S0; counter := 0;
 			
 			elsif rising_edge(clk) then
 				case State is
@@ -78,21 +78,20 @@ architecture behaviour of pattern_recognizer is
 
 						when S11100 =>
 								if(counter = 100) then
-									segment_display_ms <= intdec_to_display_vector(10); --sent overflow to segment display
-									segment_display_ls <= intdec_to_display_vector(10); --sent overflow to segment display
+									segment_display_ms <= int_to_dec_display_vector(10); --sent overflow to segment display
+									segment_display_ls <= int_to_dec_display_vector(10); --sent overflow to segment display
 								else
 				
 									counter := counter + 1;
 						
-									segment_display_ls <= intdec_to_display_vector(counter mod 10); --sent least significant number to segment display
-									temp <= counter/10;
-									segment_display_ms <= intdec_to_display_vector(temp mod 10); --sent most significant number to segment display
+									segment_display_ls <= int_to_dec_display_vector(counter mod 10); --sent least significant number to segment display
+									temp := counter/10;
+									segment_display_ms <= int_to_dec_display_vector(temp mod 10); --sent most significant number to segment display
 						
 								end if;
 								
 						when others =>
 							null;
-
 					
 				end case;
 		

@@ -3,51 +3,29 @@ use ieee.std_logic_1164.all;
 
 PACKAGE seven_segment_display IS
 
-
-	FUNCTION int_to_dec_display_vector(input: integer) RETURN std_logic_vector(6 DOWNTO 0);
-
-
-
-	--FUNCTION intdec_to_display_vector IS
-		--PORT(input: IN integer; output: OUT std_logic_vector(6 DOWNTO 0));
-	--END FUNCTION;
-	
-	--COMPONENT inthex_to_display_vector IS
-	--	PORT(input: IN integer;output: OUT std_logic_vector(6 DOWNTO 0));
-	--END COMPONENT;
-	--
-	--COMPONENT vector_to_display_vector IS
-	--	PORT(input: IN std_logic_vector(3 DOWNTO 0); output: out std_logic_vector(6 DOWNTO 0));
-	--END COMPONENT;
+	FUNCTION int_to_dec_display_vector(input: integer) RETURN std_logic_vector;
 
 END PACKAGE;
 
 PACKAGE BODY seven_segment_display IS
-	VARIABLE temp: std_logic_vector;
-	FUNCTION int_to_dec_display_vector(input: integer) RETURN std_logic_vector(6 DOWNTO 0) IS
+	FUNCTION int_to_dec_display_vector(input: integer) RETURN std_logic_vector IS VARIABLE temp : std_logic_vector(6 DOWNTO 0);
 	BEGIN
+		case input is 
+			WHEN 0 => temp := "0111111"; -- 0, 
+         WHEN 1 => temp := "0000110"; -- 1
+         WHEN 2 => temp := "1011011"; -- 2
+         WHEN 3 => temp := "1001111"; -- 3 
+         WHEN 4 => temp := "1100110"; -- 4
+         WHEN 5 => temp := "1101101"; -- 5
+         WHEN 6 => temp := "1111101"; -- 6
+         WHEN 7 => temp := "0000111"; -- 7
+         WHEN 8 => temp := "1111111"; -- 8
+         WHEN 9 => temp := "1101111"; -- 9
+         WHEN OTHERS => temp := "1000000"; --
+		END CASE;
 		
-		RETURN conv_std_logic_vector(input);
+	RETURN temp;
 		
-		
-		
-		--WITH input SELECT 
-		--temp 	<=		"0111111" WHEN 0,
-			--			"0000110" WHEN 1,
-			--			"1011011" WHEN 2,
-			--			"1001111" WHEN 3,
-			--			"1100110" WHEN 4,
-			--			"1101101" WHEN 5,
-			--			"1111101" WHEN 6,
-			--			"0000111" WHEN 7,
-			--			"1111111" WHEN 8,
-			--			"1101111" WHEN 9,
-			--			"1000000" WHEN OTHERS;
-	
-	--RETURN temp;
-	
-	
 	END int_to_dec_display_vector;
-
 
 END seven_segment_display;

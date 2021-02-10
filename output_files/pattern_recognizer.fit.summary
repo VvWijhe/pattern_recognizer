@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Feb 10 08:19:29 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : pattern_recognizer
+Top-level Entity Name : pattern_recognizer
+Family : Cyclone IV E
+Device : EP4CE40F29C9L
+Timing Models : Final
+Total logic elements : 159 / 39,600 ( < 1 % )
+    Total combinational functions : 159 / 39,600 ( < 1 % )
+    Dedicated logic registers : 27 / 39,600 ( < 1 % )
+Total registers : 27
+Total pins : 17 / 533 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,161,216 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 232 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
