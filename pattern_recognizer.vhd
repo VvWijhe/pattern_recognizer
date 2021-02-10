@@ -6,8 +6,8 @@ entity pattern_recognizer is
 	port(	clk : in std_logic;
 			reset : in std_logic;
 			x : in std_logic;
-			segment_display_ms : out std_logic_vector(6 DOWNTO 0);
-			segment_display_ls	: out std_logic_vector(6 DOWNTO 0)	
+			seg1	: out std_logic_vector(6 DOWNTO 0);
+			seg2	: out std_logic_vector(6 DOWNTO 0)	
 	);
 end pattern_recognizer;
 
@@ -78,15 +78,15 @@ architecture behaviour of pattern_recognizer is
 
 						when S11100 =>
 								if(counter = 100) then
-									segment_display_ms <= int_to_dec_display_vector(10); --sent overflow to segment display
-									segment_display_ls <= int_to_dec_display_vector(10); --sent overflow to segment display
+									seg1 <= int_to_dec_display_vector(10); --sent overflow to segment display
+									seg2 <= int_to_dec_display_vector(10); --sent overflow to segment display
 								else
 				
 									counter := counter + 1;
 						
-									segment_display_ls <= int_to_dec_display_vector(counter mod 10); --sent least significant number to segment display
+									seg1 <= int_to_dec_display_vector(counter mod 10); --sent least significant number to segment display
 									temp := counter/10;
-									segment_display_ms <= int_to_dec_display_vector(temp mod 10); --sent most significant number to segment display
+									seg2 <= int_to_dec_display_vector(temp mod 10); --sent most significant number to segment display
 						
 								end if;
 								
