@@ -3,9 +3,9 @@ use ieee.std_logic_1164.all;
 use work.seven_segment_display.all;
 
 entity pattern_recognizer is
-	port(	clk : in std_logic;
+	port(	clk 	: in std_logic;
 			reset : in std_logic;
-			x : in std_logic;
+			x 		: in std_logic;
 			seg1	: out std_logic_vector(6 DOWNTO 0);
 			seg2	: out std_logic_vector(6 DOWNTO 0)	
 	);
@@ -17,12 +17,12 @@ architecture behaviour of pattern_recognizer is
 	begin
 		process(clk, reset)
 			type State_type is (S0, S1, S11, S111, S1110, S11100);
-			variable State : State_Type;
-			variable counter : integer range 0 to 100;
-			variable temp : integer range 0 to 9;
+			variable State 	: State_Type;
+			variable counter	: integer range 0 to 100;
+			variable temp		: integer range 0 to 9;
 		begin
 			
-			if(reset='1') then
+			if(reset='0') then
 				State := S0; counter := 0;
 			
 			elsif rising_edge(clk) then

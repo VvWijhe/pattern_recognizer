@@ -1,5 +1,5 @@
 Fitter report for pattern_recognizer
-Wed Feb 10 08:52:09 2021
+Wed Feb 10 10:18:04 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Feb 10 08:52:09 2021       ;
+; Fitter Status                   ; Successful - Wed Feb 10 10:18:04 2021       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pattern_recognizer                          ;
 ; Top-level Entity Name           ; pattern_recognizer                          ;
@@ -232,12 +232,12 @@ The pin-out file can be found in D:/NAS/School/Master/Embedded Systems/Design of
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 72 / 32,070        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 72                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 73 / 32,070        ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 74 / 32,070        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 14                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 59                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 60                 ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -320,7 +320,7 @@ The pin-out file can be found in D:/NAS/School/Master/Embedded Systems/Design of
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 1.0% / 1.0% / 1.0% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.5% / 0.6% ;       ;
 ; Maximum fan-out                                             ; 27                 ;       ;
 ; Highest non-global fan-out                                  ; 18                 ;       ;
 ; Total fan-out                                               ; 539                ;       ;
@@ -335,12 +335,12 @@ The pin-out file can be found in D:/NAS/School/Master/Embedded Systems/Design of
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 72 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 72                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 73 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 74 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 14                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 59                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 60                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -422,7 +422,7 @@ The pin-out file can be found in D:/NAS/School/Master/Embedded Systems/Design of
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; clk   ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 27                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; reset ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 14                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; x     ; W20   ; 5A       ; 89           ; 6            ; 3            ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; x     ; AB25  ; 5A       ; 89           ; 11           ; 60           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -557,7 +557,7 @@ The pin-out file can be found in D:/NAS/School/Master/Embedded Systems/Design of
 ; AB22     ; 225        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AB23     ; 227        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AB24     ;            ; 5A             ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AB25     ; 230        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AB25     ; 230        ; 5A             ; x                               ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AB26     ; 226        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AB27     ; 254        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AB28     ; 249        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -1330,7 +1330,7 @@ The pin-out file can be found in D:/NAS/School/Master/Embedded Systems/Design of
 ; W17      ; 152        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; W18      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W19      ; 192        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; W20      ; 217        ; 5A             ; x                               ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; W20      ; 217        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; W21      ; 221        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; W22      ; 223        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; W23      ;            ; 5A             ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -1406,15 +1406,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node             ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name         ; Library Name ;
 +----------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |pattern_recognizer                    ; 71.5 (26.1)          ; 72.5 (26.1)                      ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 135 (42)            ; 27 (27)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 17   ; 0            ; |pattern_recognizer                                                                                                 ; pattern_recognizer  ; work         ;
-;    |lpm_divide:Div0|                   ; 17.3 (0.0)           ; 18.3 (0.0)                       ; 0.9 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_4am:auto_generated|  ; 17.3 (0.0)           ; 18.3 (0.0)                       ; 0.9 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated                                                   ; lpm_divide_4am      ; work         ;
-;          |sign_div_unsign_akh:divider| ; 17.3 (0.0)           ; 18.3 (0.0)                       ; 0.9 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
-;             |alt_u_div_qse:divider|    ; 17.3 (17.3)          ; 18.3 (18.3)                      ; 0.9 (0.9)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (38)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider|alt_u_div_qse:divider ; alt_u_div_qse       ; work         ;
-;    |lpm_divide:Mod0|                   ; 25.0 (0.0)           ; 25.7 (0.0)                       ; 0.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_a2m:auto_generated|  ; 25.0 (0.0)           ; 25.7 (0.0)                       ; 0.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated                                                   ; lpm_divide_a2m      ; work         ;
-;          |sign_div_unsign_dkh:divider| ; 25.0 (0.0)           ; 25.7 (0.0)                       ; 0.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider                       ; sign_div_unsign_dkh ; work         ;
-;             |alt_u_div_0te:divider|    ; 25.0 (25.0)          ; 25.7 (25.7)                      ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (50)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_0te:divider ; alt_u_div_0te       ; work         ;
+; |pattern_recognizer                    ; 71.5 (26.7)          ; 73.5 (28.5)                      ; 2.0 (1.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 135 (42)            ; 27 (27)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 17   ; 0            ; |pattern_recognizer                                                                                                 ; pattern_recognizer  ; work         ;
+;    |lpm_divide:Div0|                   ; 17.3 (0.0)           ; 17.5 (0.0)                       ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_4am:auto_generated|  ; 17.3 (0.0)           ; 17.5 (0.0)                       ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated                                                   ; lpm_divide_4am      ; work         ;
+;          |sign_div_unsign_akh:divider| ; 17.3 (0.0)           ; 17.5 (0.0)                       ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
+;             |alt_u_div_qse:divider|    ; 17.3 (17.3)          ; 17.5 (17.5)                      ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (38)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider|alt_u_div_qse:divider ; alt_u_div_qse       ; work         ;
+;    |lpm_divide:Mod0|                   ; 25.0 (0.0)           ; 25.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_a2m:auto_generated|  ; 25.0 (0.0)           ; 25.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated                                                   ; lpm_divide_a2m      ; work         ;
+;          |sign_div_unsign_dkh:divider| ; 25.0 (0.0)           ; 25.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider                       ; sign_div_unsign_dkh ; work         ;
+;             |alt_u_div_0te:divider|    ; 25.0 (25.0)          ; 25.0 (25.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 50 (50)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_0te:divider ; alt_u_div_0te       ; work         ;
 ;    |lpm_divide:Mod1|                   ; 2.5 (0.0)            ; 2.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
 ;       |lpm_divide_42m:auto_generated|  ; 2.5 (0.0)            ; 2.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod1|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
 ;          |sign_div_unsign_7kh:divider| ; 2.5 (0.0)            ; 2.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod1|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
@@ -1443,8 +1443,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg2[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; seg2[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; clk     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; reset   ; Input    ; -- ; --   ; (7)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; x       ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; reset   ; Input    ; -- ; (7)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; x       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1455,43 +1455,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; clk                 ;                   ;         ;
 ; reset               ;                   ;         ;
-;      - counter[0]   ; 1                 ; 7       ;
-;      - counter[1]   ; 1                 ; 7       ;
-;      - counter[2]   ; 1                 ; 7       ;
-;      - counter[3]   ; 1                 ; 7       ;
-;      - counter[4]   ; 1                 ; 7       ;
-;      - counter[5]   ; 1                 ; 7       ;
-;      - counter[6]   ; 1                 ; 7       ;
-;      - State.S1110  ; 1                 ; 7       ;
-;      - seg1[0]~0    ; 1                 ; 7       ;
-;      - State.S111   ; 1                 ; 7       ;
-;      - State.S11    ; 1                 ; 7       ;
-;      - State.S1     ; 1                 ; 7       ;
-;      - State.S0     ; 1                 ; 7       ;
-;      - State.S11100 ; 1                 ; 7       ;
+;      - counter[0]   ; 0                 ; 7       ;
+;      - counter[1]   ; 0                 ; 7       ;
+;      - counter[2]   ; 0                 ; 7       ;
+;      - counter[3]   ; 0                 ; 7       ;
+;      - counter[4]   ; 0                 ; 7       ;
+;      - counter[5]   ; 0                 ; 7       ;
+;      - counter[6]   ; 0                 ; 7       ;
+;      - State.S1110  ; 0                 ; 7       ;
+;      - seg1[0]~0    ; 0                 ; 7       ;
+;      - State.S111   ; 0                 ; 7       ;
+;      - State.S11    ; 0                 ; 7       ;
+;      - State.S1     ; 0                 ; 7       ;
+;      - State.S0     ; 0                 ; 7       ;
+;      - State.S11100 ; 0                 ; 7       ;
 ; x                   ;                   ;         ;
 ;      - seg1[0]~0    ; 0                 ; 0       ;
-;      - counter[6]~0 ; 1                 ; 0       ;
-;      - State~14     ; 1                 ; 0       ;
+;      - counter[6]~0 ; 0                 ; 0       ;
+;      - State~14     ; 0                 ; 0       ;
 ;      - State~15     ; 0                 ; 0       ;
 ;      - State~16     ; 0                 ; 0       ;
-;      - State~17     ; 1                 ; 0       ;
-;      - Selector0~0  ; 1                 ; 0       ;
+;      - State~17     ; 0                 ; 0       ;
+;      - Selector0~0  ; 0                 ; 0       ;
 ;      - State~18     ; 0                 ; 0       ;
 +---------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                           ;
-+--------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name         ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Equal0~1     ; LABCELL_X83_Y5_N57 ; 14      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; clk          ; PIN_AF14           ; 27      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; counter[6]~0 ; LABCELL_X83_Y5_N24 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; reset        ; PIN_AA14           ; 14      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; seg1[0]~0    ; LABCELL_X83_Y6_N15 ; 14      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+--------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                             ;
++--------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name         ; Location             ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Equal0~1     ; MLABCELL_X84_Y11_N57 ; 14      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; clk          ; PIN_AF14             ; 27      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; counter[6]~0 ; MLABCELL_X84_Y11_N48 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; reset        ; PIN_AA14             ; 14      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; seg1[0]~0    ; LABCELL_X83_Y10_N6   ; 14      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++--------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1508,14 +1508,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 147 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 2 / 13,420 ( < 1 % )    ;
-; C2 interconnects                            ; 32 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 23 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 144 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 0 / 13,420 ( 0 % )      ;
+; C2 interconnects                            ; 43 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 20 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 52 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 34 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1571,12 +1571,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 47 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 53 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 3 / 12,676 ( < 1 % )    ;
-; R14/C12 interconnect drivers                ; 5 / 20,720 ( < 1 % )    ;
-; R3 interconnects                            ; 57 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 49 / 266,960 ( < 1 % )  ;
+; R14 interconnects                           ; 4 / 12,676 ( < 1 % )    ;
+; R14/C12 interconnect drivers                ; 3 / 20,720 ( < 1 % )    ;
+; R3 interconnects                            ; 55 / 130,992 ( < 1 % )  ;
+; R6 interconnects                            ; 45 / 266,960 ( < 1 % )  ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1709,8 +1709,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; I/O             ; clk                  ; 1.5               ;
-; clk,I/O         ; clk                  ; 1.1               ;
+; I/O             ; clk                  ; 2.2               ;
+; clk             ; clk                  ; 1.1               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1721,14 +1721,14 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+----------------------+-------------------+
 ; Source Register ; Destination Register ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; reset           ; State.S11100         ; 0.879             ;
-; x               ; seg1[0]~reg0         ; 0.656             ;
-; State.S1110     ; seg1[0]~reg0         ; 0.656             ;
-; State.S0        ; State.S1             ; 0.200             ;
-; State.S11       ; State.S111           ; 0.196             ;
-; State.S111      ; State.S0             ; 0.189             ;
-; State.S11100    ; State.S1             ; 0.163             ;
-; State.S1        ; State.S11            ; 0.045             ;
+; reset           ; State.S11100         ; 0.820             ;
+; x               ; seg1[0]~reg0         ; 0.472             ;
+; State.S1110     ; seg1[0]~reg0         ; 0.472             ;
+; State.S11       ; State.S111           ; 0.197             ;
+; State.S111      ; State.S0             ; 0.197             ;
+; State.S0        ; State.S1             ; 0.195             ;
+; State.S1        ; State.S11            ; 0.180             ;
+; State.S11100    ; State.S1             ; 0.164             ;
 +-----------------+----------------------+-------------------+
 Note: This table only shows the top 8 path(s) that have the largest delay added for hold.
 
@@ -1767,7 +1767,7 @@ Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "data" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:10
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
@@ -1781,19 +1781,19 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/output_files/pattern_recognizer.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 6744 megabytes
-    Info: Processing ended: Wed Feb 10 08:52:09 2021
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:01:14
+    Info: Peak virtual memory: 6746 megabytes
+    Info: Processing ended: Wed Feb 10 10:18:04 2021
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:01:17
 
 
 +----------------------------+
