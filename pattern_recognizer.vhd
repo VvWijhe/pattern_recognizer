@@ -105,3 +105,17 @@ architecture behaviour of pattern_recognizer is
 		end process;
 	
 end behaviour;
+
+architecture subsystems of pattern_recognizer is
+signal match	: std_logic;
+signal bcd1		: integer range 0 to 15;
+signal bcd2		: integer range 0 to 15;	
+begin 
+
+list_det_entity	: entity work.list_det(structure) port map (clk, reset, data, match);
+counter_entity		: entity work.counter(structure) port map (clk, reset, match, bcd1, bcd2);
+disp1_entity		: entity work.disp_driver(structure) port map (bcd1, seg1);
+disp2_entity		: entity work. disp_driver(structure) port map (bcd2, seg2);
+
+end subsystems;
+
