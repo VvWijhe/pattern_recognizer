@@ -26,8 +26,8 @@ architecture behaviour of pattern_recognizer is
 			if(reset='0') then
 				State := S0; 
 				counter := 0;
-				seg1 <= "0111111";
-				seg2 <= "0111111";
+				seg1 <= "1000000";
+				seg2 <= "1000000";
 			
 			elsif rising_edge(clk) then
 				case State is
@@ -82,8 +82,8 @@ architecture behaviour of pattern_recognizer is
 
 						when S11100 =>
 								if(counter = 99) then
-									temp_seg1 := "1000000"; --sent overflow to segment display
-									temp_seg2 := "1000000"; --sent overflow to segment display
+									temp_seg1 := "0111111"; --sent overflow to segment display
+									temp_seg2 := "0111111"; --sent overflow to segment display
 								else
 				
 									counter := counter + 1;									
