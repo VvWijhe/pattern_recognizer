@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/simulation/modelsim
+Epattern_recognizer
+Z1 w1612997047
+Z2 DPx4 work 21 seven_segment_display 0 22 ZHY6`hBZJ8@7_o0z<lUE80
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd
+Z6 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd
+l0
+L5
+VVJ2O3jb[^NnaTHJRh]2H03
+!s100 EGc__L4la8d_0nU0ZLSac1
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1612997596
+!i10b 1
+Z9 !s108 1612997596.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd|
+Z11 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R2
+R3
+R4
+DEx4 work 18 pattern_recognizer 0 22 VJ2O3jb[^NnaTHJRh]2H03
+l17
+L16
+V9e?YP_:nQXLXgj5DMk2cn1
+!s100 KGm9R6j3]HK_@Kb:lBIle1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Pseven_segment_display
+R3
+R4
+Z14 w1612942544
+R0
+Z15 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd
+Z16 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd
+l0
+L4
+VZHY6`hBZJ8@7_o0z<lUE80
+!s100 `?`Zf1;zY^RcW]]?KnFbF1
+R7
+31
+b1
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd|
+Z18 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd|
+!i113 1
+R12
+R13
+Bbody
+R2
+R3
+R4
+l0
+L10
+V:>[LZU;A>CQGIHAH>Cz:22
+!s100 V[XbBS>`1n@Oi=ijhGkLU3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etestbench
+Z19 w1612995104
+R3
+R4
+R0
+Z20 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd
+Z21 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd
+l0
+L4
+VJB3AWk<f2l;8e<UJ<fGW[3
+!s100 1H?h^mS<NVo80LnK44QLk3
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd|
+Z23 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R3
+R4
+DEx4 work 9 testbench 0 22 JB3AWk<f2l;8e<UJ<fGW[3
+l27
+L8
+V_caemeD87@FKH<8_DUeF<1
+!s100 79IEgUXR3hBzFAgfOWYUD1
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Etestset
+Z24 w1612997491
+Z25 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R0
+Z26 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd
+Z27 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd
+l0
+L4
+VBFVCYXU1`m0BZOfkRO5TO0
+!s100 3E?oFS3gBn5Te;[Z@71aB1
+R7
+31
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd|
+Z29 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd|
+!i113 1
+R12
+R13
+Aset1
+R25
+R3
+R4
+DEx4 work 7 testset 0 22 BFVCYXU1`m0BZOfkRO5TO0
+l10
+L8
+Vez<i9m>]iEf><`=0N0<AH0
+!s100 dInl1b;J`W5<@]H7=AbPi1
+R7
+31
+R8
+!i10b 1
+R9
+R28
+R29
+!i113 1
+R12
+R13

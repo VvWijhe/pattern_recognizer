@@ -8,42 +8,43 @@ END testset;
 ARCHITECTURE set1 OF testset IS
 	signal clock : std_logic := '0';
 BEGIN
-	clock <= not clock after 10 ns;
+	clock <= not clock after 10ns;
 	clk <= clock;
 	
   PROCESS
   BEGIN
     
-	 wait for 100 ns;
+	 wait for 100ns;
 	 reset <= '1';
-	 wait for 100 ns;
+	 wait for 100ns;
 	 
 	 assert false report "Send the pattern 110 times" severity note;
 	 
 	 for i in 1 to 110 loop
 	 data <= '0';
-	 wait for 100 ns;
+	 wait for 100ns;
 	 data <= '1';
-	 wait for 100 ns;	 
+	 wait for 100ns;	 
 	 end loop;
 	 
 	 assert false report "Reset the pattern recognizer" severity note;
 	 
 	 reset <= '0';
-	 wait for 100 ns;
+	 wait for 100ns;
+	 reset <= '1';
+	 wait for 100ns;
 	 
 	 assert false report "Send the pattern 50 times " severity note;
 	 
 	 for i in 1 to 50 loop
 	 data <= '0';
-	 wait for 100 ns;
+	 wait for 100ns;
 	 data <= '1';
-	 wait for 100 ns;
+	 wait for 100ns;
 	 end loop;
 	 
 	 assert false report "Testset done" severity note;
-	 
-    WAIT; -- forever
+	 wait;
   END PROCESS;
 END set1;
 
