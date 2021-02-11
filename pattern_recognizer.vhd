@@ -5,7 +5,7 @@ use work.seven_segment_display.all;
 entity pattern_recognizer is
 	port(	clk 	: in std_logic;
 			reset : in std_logic;
-			data 		: in std_logic;
+			data 	: in std_logic;
 			seg1	: out std_logic_vector(6 DOWNTO 0);
 			seg2	: out std_logic_vector(6 DOWNTO 0)	
 	);
@@ -16,92 +16,35 @@ end pattern_recognizer;
 architecture behaviour of pattern_recognizer is
 	begin
 		process(clk, reset)
-			type State_type is (S0, S1, S11, S111, S1110, S11100);
-			variable State 		: State_Type;
-			variable counter		: integer range 0 to 100;
-			variable temp_seg1	: std_logic_vector(6 DOWNTO 0);
-			variable temp_seg2	: std_logic_vector(6 DOWNTO 0);
+			variable pattern			: std_logic_vector(4 downto 0) := "11100";
+			variable last_five_bits	: std_logic_vector(4 downto 0) := "UUUUU";
+			variable counter			: integer range 0 to 100;
 		begin
-			
-			if(reset='0') then
-				State := S0; 
-				counter := 0;
-				seg1 <= "1000000";
-				seg2 <= "1000000";
-			
-			elsif rising_edge(clk) then
-				case State is
-					when S0 =>
-						if(data = '1') then
-							State := S1;
-						else
-							State := S0;
-						end if;
-					
-					when S1 =>
-						if(data = '1') then
-							State := S11;
-						else 
-							State := S0;
-						end if;
-			
-					when S11 =>
-						if(data = '1') then
-							State := S111;
-						else
-							State := S0;
-						end if;
-						
-					when S111 =>
-						if(data = '1') then
-							State := S111;
-						else
-							State := S1110;
-						end if;
-						
-					when S1110 =>
-						if(data = '1') then
-							State := S1;
-						else
-							State := S11100;
-						end if;
-						
-					when S11100 =>
-						if(data = '1') then
-							State := S1;
-						else
-							State := S0;
-						end if;
-					
-					when others =>
-						State := S0;
-						
-				end case; 
-			
-				case State is
-
-						when S11100 =>
-								if(counter = 99) then
-									temp_seg1 := "0111111"; --sent overflow to segment display
-									temp_seg2 := "0111111"; --sent overflow to segment display
-								else
-				
-									counter := counter + 1;									
-									temp_seg1 := int_to_dec_display_vector(counter mod 10); --sent least significant number to segment display
-									temp_seg2 := int_to_dec_display_vector(counter/10); --sent most significant number to segment display
-						
-								end if;
-								
-								seg1 <= temp_seg1;
-								seg2 <= temp_seg2;
-								
-						when others =>
-							null;
-					
-				end case;
 		
+		
+		if(reset = '0') then
+			counter 			:= 0;							--Reset counter to zero
+			last_five_bits	:= "UUUUU";					--Reset last_five_bits to unkowns
+			seg1 <= int_to_dec_display_vector(0); 	--Reset segment display to zero
+			seg2 <= int_to_dec_display_vector(0); 	--Reset segment display to zero
+		
+		elsif rising_edge(clk) then
+			
+			last_five_bits := last_five_bits(3 downto 0) & data;	-- append new data bit to the last_five_bits
+			
+			if(last_five_bits = pattern) then
+				if(counter = 99) then
+					seg1 <= int_to_dec_display_vector(10); --Set segment display to overflow
+					seg2 <= int_to_dec_display_vector(10);	--Set segment display to overflow	
+				else
+					counter := counter + 1;										--Increment counter by one							
+					seg1 <= int_to_dec_display_vector(counter mod 10); --Assign least significant number to segment display
+					seg2 <= int_to_dec_display_vector(counter/10); 		--Assign most significant number to segment display
+				end if;
 			end if;
 		
+		
+		end if;
 		end process;
 	
 end behaviour;

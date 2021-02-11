@@ -15,6 +15,8 @@ begin
 		type State_type is (S0, S1, S11, S111, S1110, S11100);
 		variable State : State_Type;
 		
+		begin
+		
 		if(reset='0') then
 			State := S0; 
 			
@@ -79,6 +81,6 @@ begin
 					
 				end case;
 
-
-
+	end if;
+	end process;
 end structure;
