@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.seven_segment_display.all;
+
+entity list_det is
+	port(	clk 	: in std_logic;
+			reset : in std_logic;
+			match	: out std_logic
+	);
+end list_det;
