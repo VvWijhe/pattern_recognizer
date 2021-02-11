@@ -1,6 +1,6 @@
 Analysis & Synthesis report for pattern_recognizer
-Thu Feb 11 14:45:48 2021
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Thu Feb 11 21:57:54 2021
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -13,10 +13,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+  8. State Machine - |pattern_recognizer|list_det:list_det_entity|State
+  9. General Register Statistics
+ 10. Parameter Settings for Inferred Entity Instance: counter:counter_entity|lpm_divide:Mod0
+ 11. Parameter Settings for Inferred Entity Instance: counter:counter_entity|lpm_divide:Div0
  12. Post-Synthesis Netlist Statistics for Top Partition
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
@@ -45,13 +45,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Feb 11 14:45:48 2021       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Thu Feb 11 21:57:54 2021       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; pattern_recognizer                          ;
 ; Top-level Entity Name           ; pattern_recognizer                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 25                                          ;
+; Total registers                 ; 22                                          ;
 ; Total pins                      ; 17                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -157,7 +157,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
+; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -169,24 +169,27 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; seven_segment_display.vhd        ; yes             ; User VHDL File               ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd  ;         ;
-; pattern_recognizer.vhd           ; yes             ; User VHDL File               ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd     ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                             ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                            ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                        ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                             ;         ;
-; db/lpm_divide_a2m.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/lpm_divide_a2m.tdf      ;         ;
-; db/sign_div_unsign_dkh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/sign_div_unsign_dkh.tdf ;         ;
-; db/alt_u_div_0te.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/alt_u_div_0te.tdf       ;         ;
-; db/lpm_divide_4am.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/lpm_divide_4am.tdf      ;         ;
-; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/sign_div_unsign_akh.tdf ;         ;
-; db/alt_u_div_qse.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/alt_u_div_qse.tdf       ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                            ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; seven_segment_display.vhd        ; yes             ; User VHDL File               ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd  ;         ;
+; pattern_recognizer.vhd           ; yes             ; User VHDL File               ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd     ;         ;
+; list_det.vhd                     ; yes             ; User VHDL File               ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd               ;         ;
+; counter.vhd                      ; yes             ; User VHDL File               ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd                ;         ;
+; disp_driver.vhd                  ; yes             ; User VHDL File               ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd            ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf                                                               ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/abs_divider.inc                                                              ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc                                                          ;         ;
+; aglobal180.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/aglobal180.inc                                                               ;         ;
+; db/lpm_divide_a2m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/lpm_divide_a2m.tdf      ;         ;
+; db/sign_div_unsign_dkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/sign_div_unsign_dkh.tdf ;         ;
+; db/alt_u_div_0te.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/alt_u_div_0te.tdf       ;         ;
+; db/lpm_divide_4am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/lpm_divide_4am.tdf      ;         ;
+; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/sign_div_unsign_akh.tdf ;         ;
+; db/alt_u_div_qse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/alt_u_div_qse.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -194,44 +197,63 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 63        ;
+; Estimate of Logic utilization (ALMs needed) ; 62        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 119       ;
+; Combinational ALUT usage for logic          ; 120       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 6         ;
-;     -- 5 input functions                    ; 19        ;
-;     -- 4 input functions                    ; 10        ;
-;     -- <=3 input functions                  ; 84        ;
+;     -- 6 input functions                    ; 3         ;
+;     -- 5 input functions                    ; 1         ;
+;     -- 4 input functions                    ; 25        ;
+;     -- <=3 input functions                  ; 91        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 25        ;
+; Dedicated logic registers                   ; 22        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 17        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 25        ;
-; Total fan-out                               ; 494       ;
-; Average fan-out                             ; 2.78      ;
+; Maximum fan-out                             ; 22        ;
+; Total fan-out                               ; 449       ;
+; Average fan-out                             ; 2.55      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |pattern_recognizer                    ; 119 (32)            ; 25 (25)                   ; 0                 ; 0          ; 17   ; 0            ; |pattern_recognizer                                                                                                 ; pattern_recognizer  ; work         ;
-;    |lpm_divide:Div0|                   ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_4am:auto_generated|  ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated                                                   ; lpm_divide_4am      ; work         ;
-;          |sign_div_unsign_akh:divider| ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
-;             |alt_u_div_qse:divider|    ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider|alt_u_div_qse:divider ; alt_u_div_qse       ; work         ;
-;    |lpm_divide:Mod0|                   ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_a2m:auto_generated|  ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated                                                   ; lpm_divide_a2m      ; work         ;
-;          |sign_div_unsign_dkh:divider| ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider                       ; sign_div_unsign_dkh ; work         ;
-;             |alt_u_div_0te:divider|    ; 49 (49)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_0te:divider ; alt_u_div_0te       ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                  ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                        ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |pattern_recognizer                       ; 120 (0)             ; 22 (0)                    ; 0                 ; 0          ; 17   ; 0            ; |pattern_recognizer                                                                                                                        ; pattern_recognizer  ; work         ;
+;    |counter:counter_entity|               ; 100 (18)            ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity                                                                                                 ; counter             ; work         ;
+;       |lpm_divide:Div0|                   ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_4am:auto_generated|  ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Div0|lpm_divide_4am:auto_generated                                                   ; lpm_divide_4am      ; work         ;
+;             |sign_div_unsign_akh:divider| ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
+;                |alt_u_div_qse:divider|    ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider|alt_u_div_qse:divider ; alt_u_div_qse       ; work         ;
+;       |lpm_divide:Mod0|                   ; 44 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_a2m:auto_generated|  ; 44 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Mod0|lpm_divide_a2m:auto_generated                                                   ; lpm_divide_a2m      ; work         ;
+;             |sign_div_unsign_dkh:divider| ; 44 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider                       ; sign_div_unsign_dkh ; work         ;
+;                |alt_u_div_0te:divider|    ; 44 (44)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|counter:counter_entity|lpm_divide:Mod0|lpm_divide_a2m:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_0te:divider ; alt_u_div_0te       ; work         ;
+;    |disp_driver:disp1_entity|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|disp_driver:disp1_entity                                                                                               ; disp_driver         ; work         ;
+;    |disp_driver:disp2_entity|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|disp_driver:disp2_entity                                                                                               ; disp_driver         ; work         ;
+;    |list_det:list_det_entity|             ; 6 (6)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |pattern_recognizer|list_det:list_det_entity                                                                                               ; list_det            ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------+
+; State Machine - |pattern_recognizer|list_det:list_det_entity|State                       ;
++--------------+--------------+-------------+------------+-----------+----------+----------+
+; Name         ; State.S11100 ; State.S1110 ; State.S111 ; State.S11 ; State.S1 ; State.S0 ;
++--------------+--------------+-------------+------------+-----------+----------+----------+
+; State.S0     ; 0            ; 0           ; 0          ; 0         ; 0        ; 0        ;
+; State.S1     ; 0            ; 0           ; 0          ; 0         ; 1        ; 1        ;
+; State.S11    ; 0            ; 0           ; 0          ; 1         ; 0        ; 1        ;
+; State.S111   ; 0            ; 0           ; 1          ; 0         ; 0        ; 1        ;
+; State.S1110  ; 0            ; 1           ; 0          ; 0         ; 0        ; 1        ;
+; State.S11100 ; 1            ; 0           ; 0          ; 0         ; 0        ; 1        ;
++--------------+--------------+-------------+------------+-----------+----------+----------+
 
 
 +------------------------------------------------------+
@@ -239,70 +261,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 25    ;
+; Total registers                              ; 22    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 21    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 21    ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; seg1[6]~reg0                           ; 1       ;
-; seg2[6]~reg0                           ; 1       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 7              ; Untyped                ;
-; LPM_WIDTHD             ; 7              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_a2m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: counter:counter_entity|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                                       ;
+; LPM_WIDTHD             ; 7              ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_a2m ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 7              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_4am ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: counter:counter_entity|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                                       ;
+; LPM_WIDTHD             ; 4              ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_4am ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -311,30 +322,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 25                          ;
-;     ENA CLR           ; 21                          ;
-;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 121                         ;
+; arriav_ff             ; 22                          ;
+;     CLR               ; 6                           ;
+;     ENA               ; 1                           ;
+;     ENA CLR           ; 15                          ;
+; arriav_lcell_comb     ; 122                         ;
 ;     arith             ; 52                          ;
 ;         0 data inputs ; 12                          ;
 ;         1 data inputs ; 13                          ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 17                          ;
 ;         4 data inputs ; 6                           ;
-;     normal            ; 59                          ;
+;     normal            ; 60                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 17                          ;
+;         2 data inputs ; 24                          ;
 ;         3 data inputs ; 11                          ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 19                          ;
-;         6 data inputs ; 6                           ;
+;         4 data inputs ; 19                          ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 3                           ;
 ;     shared            ; 10                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
 ; boundary_port         ; 17                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.10                       ;
-; Average LUT depth     ; 7.74                        ;
+; Max LUT depth         ; 9.10                        ;
+; Average LUT depth     ; 6.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -343,7 +355,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -352,70 +364,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 11 14:45:38 2021
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Thu Feb 11 21:57:29 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pattern_recognizer -c pattern_recognizer
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 0 entities, in source file seven_segment_display.vhd
-    Info (12022): Found design unit 1: seven_segment_display File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd Line: 4
-    Info (12022): Found design unit 2: seven_segment_display-body File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file pattern_recognizer.vhd
-    Info (12022): Found design unit 1: pattern_recognizer-behaviour File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 16
-    Info (12023): Found entity 1: pattern_recognizer File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 5
+    Info (12022): Found design unit 1: seven_segment_display File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd Line: 4
+    Info (12022): Found design unit 2: seven_segment_display-body File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd Line: 10
+Info (12021): Found 3 design units, including 1 entities, in source file pattern_recognizer.vhd
+    Info (12022): Found design unit 1: pattern_recognizer-behaviour File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd Line: 16
+    Info (12022): Found design unit 2: pattern_recognizer-subsystems File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd Line: 54
+    Info (12023): Found entity 1: pattern_recognizer File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file testset.vhd
-    Info (12022): Found design unit 1: testset-set1 File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd Line: 8
-    Info (12023): Found entity 1: testset File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd Line: 4
+    Info (12022): Found design unit 1: testset-set1 File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd Line: 8
+    Info (12023): Found entity 1: testset File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
-    Info (12022): Found design unit 1: testbench-behaviour File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd Line: 8
-    Info (12023): Found entity 1: testbench File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd Line: 4
+    Info (12022): Found design unit 1: testbench-behaviour File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd Line: 8
+    Info (12023): Found entity 1: testbench File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file list_det.vhd
-    Info (12022): Found design unit 1: list_det-structure File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/list_det.vhd Line: 12
-    Info (12023): Found entity 1: list_det File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/list_det.vhd Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file counter.vhd
-    Info (12023): Found entity 1: counter File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/counter.vhd Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file disp_driver.vhd
-    Info (12023): Found entity 1: disp_driver File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/disp_driver.vhd Line: 5
+    Info (12022): Found design unit 1: list_det-structure File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd Line: 12
+    Info (12023): Found entity 1: list_det File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: counter-structure File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 13
+    Info (12023): Found entity 1: counter File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file disp_driver.vhd
+    Info (12022): Found design unit 1: disp_driver-structure File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd Line: 10
+    Info (12023): Found entity 1: disp_driver File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd Line: 4
 Info (12127): Elaborating entity "pattern_recognizer" for the top level hierarchy
-Warning (10542): VHDL Variable Declaration warning at pattern_recognizer.vhd(19): used initial value expression for variable "pattern" because variable was never assigned a value File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 19
+Info (12129): Elaborating entity "list_det" using architecture "A:structure" for hierarchy "list_det:list_det_entity" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd Line: 60
+Info (12129): Elaborating entity "counter" using architecture "A:structure" for hierarchy "counter:counter_entity" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd Line: 61
+Info (12129): Elaborating entity "disp_driver" using architecture "A:structure" for hierarchy "disp_driver:disp1_entity" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd Line: 62
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 43
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 44
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 43
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 43
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "counter:counter_entity|Mod0" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 35
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "counter:counter_entity|Div0" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 36
+Info (12130): Elaborated megafunction instantiation "counter:counter_entity|lpm_divide:Mod0" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 35
+Info (12133): Instantiated megafunction "counter:counter_entity|lpm_divide:Mod0" with the following parameter: File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 35
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_a2m.tdf
-    Info (12023): Found entity 1: lpm_divide_a2m File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/lpm_divide_a2m.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_a2m File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/lpm_divide_a2m.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_dkh File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/sign_div_unsign_dkh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_dkh File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/sign_div_unsign_dkh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0te.tdf
-    Info (12023): Found entity 1: alt_u_div_0te File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/alt_u_div_0te.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 44
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd Line: 44
+    Info (12023): Found entity 1: alt_u_div_0te File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/alt_u_div_0te.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "counter:counter_entity|lpm_divide:Div0" File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 36
+Info (12133): Instantiated megafunction "counter:counter_entity|lpm_divide:Div0" with the following parameter: File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd Line: 36
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4am.tdf
-    Info (12023): Found entity 1: lpm_divide_4am File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/lpm_divide_4am.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_4am File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/lpm_divide_4am.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_akh File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/sign_div_unsign_akh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_akh File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/sign_div_unsign_akh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_qse.tdf
-    Info (12023): Found entity 1: alt_u_div_qse File: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/db/alt_u_div_qse.tdf Line: 22
+    Info (12023): Found entity 1: alt_u_div_qse File: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/db/alt_u_div_qse.tdf Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 147 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 130 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4868 megabytes
-    Info: Processing ended: Thu Feb 11 14:45:48 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 129 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Thu Feb 11 21:57:54 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:46
 
 

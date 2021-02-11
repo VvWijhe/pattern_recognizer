@@ -1,4 +1,4 @@
-# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
 # do pattern_recognizer_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,76 +7,117 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd}
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:47:00 on Feb 11,2021
-# vcom -reportprogress 300 -93 -work work D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd 
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package seven_segment_display
 # -- Compiling package body seven_segment_display
 # -- Loading package seven_segment_display
-# End time: 14:47:00 on Feb 11,2021, Elapsed time: 0:00:00
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd}
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:47:00 on Feb 11,2021
-# vcom -reportprogress 300 -93 -work work D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd 
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity list_det
+# -- Compiling architecture structure of list_det
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity counter
+# -- Compiling architecture structure of counter
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity disp_driver
+# -- Compiling architecture structure of disp_driver
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package seven_segment_display
 # -- Compiling entity pattern_recognizer
 # -- Compiling architecture behaviour of pattern_recognizer
-# End time: 14:47:00 on Feb 11,2021, Elapsed time: 0:00:00
+# -- Compiling architecture subsystems of pattern_recognizer
+# -- Loading entity pattern_recognizer
+# -- Loading entity list_det
+# -- Loading entity counter
+# -- Loading entity disp_driver
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd}
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:47:00 on Feb 11,2021
-# vcom -reportprogress 300 -93 -work work D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd 
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity testbench
 # -- Compiling architecture behaviour of testbench
-# End time: 14:47:00 on Feb 11,2021, Elapsed time: 0:00:00
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd}
+# vcom -93 -work work {C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:47:00 on Feb 11,2021
-# vcom -reportprogress 300 -93 -work work D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd 
+# Start time: 21:59:52 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testset
 # -- Compiling architecture set1 of testset
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(11): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(17): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 14:47:00 on Feb 11,2021, Elapsed time: 0:00:00
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(11): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(17): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 21:59:52 on Feb 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 9
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 14:47:00 on Feb 11,2021
+# Start time: 21:59:53 on Feb 11,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.testbench(behaviour)
 # Loading work.seven_segment_display(body)
-# Loading work.pattern_recognizer(behaviour)
+# Loading work.pattern_recognizer(subsystems)
+# Loading work.list_det(structure)
+# Loading work.counter(structure)
+# Loading work.disp_driver(structure)
 # Loading ieee.numeric_std(body)
 # Loading work.testset(set1)
 # 
@@ -94,5 +135,6 @@
 #    Time: 22400 ns  Iteration: 0  Instance: /testbench/testset_component
 # ** Note: Testset done
 #    Time: 32400 ns  Iteration: 0  Instance: /testbench/testset_component
-# End time: 21:33:53 on Feb 11,2021, Elapsed time: 6:46:53
+quit -sim
+# End time: 22:05:31 on Feb 11,2021, Elapsed time: 0:05:38
 # Errors: 0, Warnings: 0

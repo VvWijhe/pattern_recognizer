@@ -26,21 +26,21 @@ architecture structure of counter is
 			elsif rising_edge(clk) then
 			
 				if(match = '1') then 
+				
+					if(counter = 99) then
+						temp_bcd1 := 10; 					--sent overflow to segment display
+						temp_bcd2 := 10; 					--sent overflow to segment display
+					else
 					counter := counter + 1;
+					temp_bcd1 := (counter mod 10); 	--sent least significant number to segment display
+					temp_bcd2 := (counter/10); 		--sent most significant number to segment display
+				
+					end if;
+				
+					bcd1 <= temp_bcd1;
+					bcd2 <= temp_bcd2;
+				
 				end if;	
-				
-				if(counter = 100) then
-					temp_bcd1 := 10; 					--sent overflow to segment display
-					temp_bcd2 := 10; 					--sent overflow to segment display
-				else
-				
-				temp_bcd1 := (counter mod 10); 	--sent least significant number to segment display
-				temp_bcd2 := (counter/10); 		--sent most significant number to segment display
-				
-				end if;
-				
-				bcd1 <= temp_bcd1;
-				bcd2 <= temp_bcd2;
 		
 			end if;
 		

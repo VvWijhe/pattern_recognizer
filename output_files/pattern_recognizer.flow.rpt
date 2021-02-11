@@ -1,6 +1,6 @@
 Flow report for pattern_recognizer
-Thu Feb 11 14:46:31 2021
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Thu Feb 11 21:59:26 2021
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Feb 11 14:46:31 2021       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Flow Status                     ; Successful - Thu Feb 11 21:59:26 2021       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; pattern_recognizer                          ;
 ; Top-level Entity Name           ; pattern_recognizer                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 64 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 25                                          ;
+; Logic utilization (in ALMs)     ; 62 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 24                                          ;
 ; Total pins                      ; 17 / 457 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/11/2021 14:45:39 ;
+; Start date & time ; 02/11/2021 21:57:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pattern_recognizer  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 198112232960099.161305113909348        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 185122850592011.161307705011568        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation ;
@@ -105,12 +105,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4868 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:28     ; 1.0                     ; 6744 MB             ; 00:01:02                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4827 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5155 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4734 MB             ; 00:00:01                           ;
-; Total                ; 00:00:50     ; --                      ; --                  ; 00:01:30                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4875 MB             ; 00:00:45                           ;
+; Fitter               ; 00:01:02     ; 1.0                     ; 6745 MB             ; 00:02:39                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4835 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:10     ; 1.1                     ; 5152 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4744 MB             ; 00:00:03                           ;
+; Total                ; 00:01:49     ; --                      ; --                  ; 00:03:47                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,11 +119,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Desktop-Victor   ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Desktop-Victor   ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Desktop-Victor   ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Desktop-Victor   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Desktop-Victor   ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-LQ9LLRNV  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-LQ9LLRNV  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-LQ9LLRNV  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-LQ9LLRNV  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-LQ9LLRNV  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
