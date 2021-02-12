@@ -43,7 +43,6 @@ architecture behaviour of pattern_recognizer is
 				end if;
 			end if;
 		
-		
 		end if;
 		end process;
 	
