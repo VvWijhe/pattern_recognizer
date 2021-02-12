@@ -59,7 +59,7 @@ begin
 list_det_entity	: entity work.list_det(structure) port map (clk, reset, data, match);
 counter_entity		: entity work.counter(structure) port map (clk, reset, match, bcd1, bcd2);
 disp1_entity		: entity work.disp_driver(structure) port map (bcd1, seg1);
-disp2_entity		: entity work. disp_driver(structure) port map (bcd2, seg2);
+disp2_entity		: entity work.disp_driver(structure) port map (bcd2, seg2);
 
 end subsystems;
 

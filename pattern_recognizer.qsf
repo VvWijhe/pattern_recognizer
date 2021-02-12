@@ -43,7 +43,14 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id tes
 set_global_assignment -name VHDL_FILE list_det.vhd
 set_global_assignment -name VHDL_FILE counter.vhd
 set_global_assignment -name VHDL_FILE disp_driver.vhd
+set_global_assignment -name VHDL_FILE test_env_golden_unit.vhd
+set_global_assignment -name VHDL_FILE compare.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME test_env_golden_unit -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_env_golden_unit
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_env_golden_unit -section_id test_env_golden_unit
 set_global_assignment -name EDA_TEST_BENCH_FILE testbench.vhd -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE testset.vhd -section_id testbench
-set_global_assignment -name VHDL_FILE test_env_golden_unit.vhd
+set_global_assignment -name EDA_TEST_BENCH_FILE test_env_golden_unit.vhd -section_id test_env_golden_unit
+set_global_assignment -name EDA_TEST_BENCH_FILE testset.vhd -section_id test_env_golden_unit
+set_global_assignment -name EDA_TEST_BENCH_FILE compare.vhd -section_id test_env_golden_unit
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
