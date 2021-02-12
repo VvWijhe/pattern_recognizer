@@ -7,165 +7,304 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/simulation/modelsim
-Epattern_recognizer
-Z1 w1613051126
-Z2 DPx4 work 21 seven_segment_display 0 22 ZHY6`hBZJ8@7_o0z<lUE80
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z0 dC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/simulation/modelsim
+Ecounter
+Z1 w1613077040
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd
-Z6 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd
+Z4 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd
+Z5 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd
+l0
+L4
+VIWU89?Ab2El:JhlDRTlk`1
+!s100 1@iTk^5@Q1@eY@UPePDKk2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1613077192
+!i10b 1
+Z8 !s108 1613077192.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd|
+Z10 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/counter.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+Z13 DEx4 work 7 counter 0 22 IWU89?Ab2El:JhlDRTlk`1
+l14
+L13
+V_;eA]nO9Y^1L_KPIXjjdH1
+!s100 CkgEOOGB89?gnF4B[ihdz0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edisp_driver
+Z14 w1613037306
+R2
+R3
+R0
+Z15 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd
+Z16 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd
+l0
+L4
+VCheE>k0N3]Ge`XRd[G@gD3
+!s100 k855k<YBKcj3JjCR=3BK[2
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd|
+Z18 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/disp_driver.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+Z19 DEx4 work 11 disp_driver 0 22 CheE>k0N3]Ge`XRd[G@gD3
+l11
+L10
+VcKW9K:c8?B9E6jzenJ2]_3
+!s100 TbJk^Q^^>HT=aYf@mN`?T1
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Elist_det
+Z20 w1613075978
+R2
+R3
+R0
+Z21 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd
+Z22 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd
+l0
+L4
+VZTVTF9[Q4TXbBmeK2NFcU1
+!s100 cbe`S>fKXKBL3^fa2AQ;c1
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd|
+Z24 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/list_det.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+Z25 DEx4 work 8 list_det 0 22 ZTVTF9[Q4TXbBmeK2NFcU1
+l13
+L12
+Vg>?Kgm;m<P`e<HU<X1`el0
+!s100 1;2o`iL6ld^TBcTT0j1]P0
+R6
+31
+R7
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Epattern_recognizer
+Z26 w1613076279
+Z27 DPx4 work 21 seven_segment_display 0 22 ZHY6`hBZJ8@7_o0z<lUE80
+R2
+R3
+R0
+Z28 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd
+Z29 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd
 l0
 L5
 VcT06k^<U>jo:9YRCPGOG52
 !s100 kldR_H`bz<UR;TdHL6jH[2
-Z7 OV;C;10.5b;63
+R6
 31
-Z8 !s110 1613051220
+R7
 !i10b 1
-Z9 !s108 1613051220.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd|
-Z11 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/pattern_recognizer.vhd|
+R8
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd|
+Z31 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/pattern_recognizer.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
-Abehaviour
+R11
+R12
+Asubsystems
+R19
+R13
+R25
+R27
 R2
 R3
-R4
-DEx4 work 18 pattern_recognizer 0 22 cT06k^<U>jo:9YRCPGOG52
+Z32 DEx4 work 18 pattern_recognizer 0 22 cT06k^<U>jo:9YRCPGOG52
+l58
+L54
+V2ZOInVJHEGmED<a2GQNTc3
+!s100 l[c1aQ=ocig33:VL6EGYW3
+R6
+31
+R7
+!i10b 1
+R8
+R30
+R31
+!i113 1
+R11
+R12
+Abehaviour
+R27
+R2
+R3
+R32
 l17
 L16
-VllH`X@GRhDFE_nDJb:aNA3
-!s100 f@eGd@mz^^EVaO9VNHTO73
-R7
+V^`DWENjMMldZVf6SUn6>V2
+!s100 H1DA1GO8>d@1G1=2^YQF01
+R6
 31
-R8
+R7
 !i10b 1
-R9
-R10
-R11
+R8
+R30
+R31
 !i113 1
+R11
 R12
-R13
 Pseven_segment_display
+R2
 R3
-R4
-Z14 w1613034147
+Z33 w1613074486
 R0
-Z15 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd
-Z16 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd
+Z34 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd
+Z35 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd
 l0
 L4
 VZHY6`hBZJ8@7_o0z<lUE80
 !s100 `?`Zf1;zY^RcW]]?KnFbF1
-R7
+R6
 31
 b1
-R8
+R7
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd|
-Z18 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/seven_segment_display.vhd|
+R8
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd|
+Z37 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/seven_segment_display.vhd|
 !i113 1
+R11
 R12
-R13
 Bbody
+R27
 R2
 R3
-R4
 l0
 L10
 V6jL82]i?DbXB3jTf;i`CE3
 !s100 OHZ[UUm4dLETa5DiL^h`f0
-R7
+R6
 31
-R8
+R7
 !i10b 1
-R9
-R17
-R18
+R8
+R36
+R37
 !i113 1
+R11
 R12
-R13
 Etestbench
-Z19 w1612995104
+Z38 w1613077046
+R2
 R3
-R4
 R0
-Z20 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd
-Z21 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd
+Z39 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd
+Z40 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd
 l0
 L4
 VJB3AWk<f2l;8e<UJ<fGW[3
 !s100 1H?h^mS<NVo80LnK44QLk3
-R7
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z22 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd|
-Z23 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testbench.vhd|
+R8
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd|
+Z42 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testbench.vhd|
 !i113 1
+R11
 R12
-R13
 Abehaviour
+R2
 R3
-R4
 DEx4 work 9 testbench 0 22 JB3AWk<f2l;8e<UJ<fGW[3
 l27
 L8
 V_caemeD87@FKH<8_DUeF<1
 !s100 79IEgUXR3hBzFAgfOWYUD1
-R7
+R6
 31
-R8
+R7
 !i10b 1
-R9
-R22
-R23
+R8
+R41
+R42
 !i113 1
+R11
 R12
-R13
 Etestset
-Z24 w1612997491
-Z25 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R33
+Z43 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
 R3
-R4
 R0
-Z26 8D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd
-Z27 FD:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd
+Z44 8C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd
+Z45 FC:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd
 l0
 L4
 VBFVCYXU1`m0BZOfkRO5TO0
 !s100 3E?oFS3gBn5Te;[Z@71aB1
-R7
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z28 !s90 -reportprogress|300|-93|-work|work|D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd|
-Z29 !s107 D:/NAS/School/Master/Embedded Systems/Design of Digital Systems/Lab/pattern_recognizer/testset.vhd|
+R8
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd|
+Z47 !s107 C:/Users/Dionne Ariens/OneDrive/Documenten/UT/Kwartiel 3/DDS/DDS_projects/pattern_recognizer/testset.vhd|
 !i113 1
+R11
 R12
-R13
 Aset1
-R25
+R43
+R2
 R3
-R4
 DEx4 work 7 testset 0 22 BFVCYXU1`m0BZOfkRO5TO0
 l10
 L8
 Vez<i9m>]iEf><`=0N0<AH0
 !s100 dInl1b;J`W5<@]H7=AbPi1
-R7
+R6
 31
-R8
+R7
 !i10b 1
-R9
-R28
-R29
+R8
+R46
+R47
 !i113 1
+R11
 R12
-R13

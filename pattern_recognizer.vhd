@@ -49,6 +49,8 @@ architecture behaviour of pattern_recognizer is
 	
 end behaviour;
 
+
+
 architecture subsystems of pattern_recognizer is
 signal match	: std_logic;
 signal bcd1		: integer range 0 to 15;

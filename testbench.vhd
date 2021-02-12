@@ -28,6 +28,6 @@ architecture behaviour of testbench is
 	
 	pattern_recognizer_component	: pattern_recognizer port map(clk_signal, reset_signal, data_signal, seg1, seg2);
 	testset_component					: testset port map(data_signal, reset_signal, clk_signal);
-
+	
 end behaviour;
 
