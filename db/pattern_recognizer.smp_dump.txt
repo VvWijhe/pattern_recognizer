@@ -1,9 +1,0 @@
-
-State Machine - |pattern_recognizer|list_det:list_det_entity|State
-Name State.S11100 State.S1110 State.S111 State.S11 State.S1 State.S0 
-State.S0 0 0 0 0 0 0 
-State.S1 0 0 0 0 1 1 
-State.S11 0 0 0 1 0 1 
-State.S111 0 0 1 0 0 1 
-State.S1110 0 1 0 0 0 1 
-State.S11100 1 0 0 0 0 1 

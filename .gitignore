@@ -1,6 +1,0 @@
-# First, ignore everything
-*
-# And all the file types you're interested in.
-!*.vhd
-!*.qsf
-!*.sdc
