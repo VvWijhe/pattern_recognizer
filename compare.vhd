@@ -21,7 +21,7 @@ begin
 		start := '1';	
 	
 	elsif (start = '1' and falling_edge(clk)) then
-	
+
 		if((seg1_behaviour /= seg1_subsystems) or
 			(seg2_behaviour /= seg2_subsystems)) then
 			

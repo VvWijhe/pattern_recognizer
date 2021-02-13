@@ -57,7 +57,7 @@ configuration test_configuration of test_env_golden_unit is
 		use entity work.pattern_recognizer(behaviour);
 	end for;
 	for inst_pattern_subsystems : pattern_recognizer
-		use entity work.pattern_recognizer(subsystems);
+		use entity work.pattern_recognizer(structure);
 	end for;
 
  end for;
