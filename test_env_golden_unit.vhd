@@ -8,7 +8,7 @@ end test_env_golden_unit;
 
 architecture test of test_env_golden_unit is
 
-	component test_set is
+	component testset is
 		port(	clk	: out std_logic;
 				reset	: out std_logic;
 				data 	: out std_logic);	
@@ -46,7 +46,7 @@ begin
 	inst_pattern_behaviour : pattern_recognizer port map(clk_signal, reset_signal, data_signal, seg1_behaviour_signal, seg2_behaviour_signal);
 	inst_pattern_subsystems : pattern_recognizer port map(clk_signal, reset_signal, data_signal, seg1_subsystems_signal, seg2_subsystems_signal);
 	inst_compare : compare port map(clk_signal, reset_signal, seg1_behaviour_signal, seg2_behaviour_signal, seg1_subsystems_signal, seg2_subsystems_signal);
-	inst_testset : test_set port map(clk_signal, reset_signal, data_signal);
+	inst_testset : testset port map(clk_signal, reset_signal, data_signal);
 	
 end test;
 
